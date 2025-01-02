@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+
 	"golang.org/x/sys/windows/registry"
 )
 
@@ -27,5 +28,5 @@ func main() {
 		return
 	}
 
-	fmt.Println("Registry entry added successfully")
+	fmt.Printf("%v registry entry added successfully\n", keyName)
 }
